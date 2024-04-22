@@ -1,0 +1,65 @@
+:root {
+    --header-footer-bg-color: #333333;
+    --nav-bg-color: #000000;
+    --main-bg-color: #cccccc;
+    --aside-bg-color: #ffffff;
+    --text-1-color: #ececec;
+    --text-2-color: #e5e5e5;
+    --text-3-color: #1a1a1a;
+}
+
+body {
+    width: 100%;
+    min-width: 500px;
+    margin: 0;
+}
+
+body > * > * {
+    padding: 10px;
+}
+
+p, div, aside {
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    background-color: var(--nav-bg-color);
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--text-2-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.outside {
+    background-color: var(--header-footer-bg-color);
+    color: var(--text-1-color);
+    height: 7rem;
+}
+
+.foot p{
+    text-align: center;
+    margin: 0;
+}
+
+.main {
+    background-color: var(--main-bg-color);
+    color: var(--text-3-color);
+    flex: 2 1 0;
+}
+
+.aside {
+    background-color: var(--aside-bg-color);
+    color: var(--text-3-color);
+    flex: 1 1 0;
+}
