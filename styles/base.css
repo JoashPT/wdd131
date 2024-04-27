@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-footer-bg-color: #112211;
+    --nav-bg-color: #404020;
+    --nav-hover-color: #5e5e3e;
+    --text-color-1: #dedede;
+    --text-color-2: #292929;
+    --span-color: #f1affa;
+
+    --title-font: Roboto;
+    --content-font: Sedan;
+}
+
+.maincontent > p, li > a {
+    font-family: var(--content-font);
+    color: var(--text-color-2);
+}
+
+a {
+    font-family: var(--content-font);
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+h1, footer > p {
+    font-family: var(--title-font);
+    color: var(--text-color-1);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--nav-bg-color);
+}
+
+nav a {
+    display: block;
+    padding: 1rem 3rem;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-color);
+}
+
+body {
+    margin: 1rem;
+    min-width: 500px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border: solid black 1px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.card > h2:first-child {
+    width: 100%;
+    text-align: center;
+    background-color: var(--header-footer-bg-color);
+    font-family: var(--title-font);
+    color: var(--text-color-1);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 auto;
+}
+
+.countryHeader {
+    width: 60%;
+    align-self: center;
+    text-align: center;
+    font-family: var(--title-font);
+    border-bottom: solid gray 0.75px;
+}
+
+.about {
+    grid-column: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+}
+
+.mainContent > p {
+    grid-column: 1;
+}
+
+.mainContent > figure {
+    grid-column: 2;
+}
+
+.countryContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+}
+
+.countryContent > figure {
+    grid-column: 1;
+    padding: 1rem
+}
+
+.countryContent > p {
+    grid-column: 2;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+figure > figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+.resources > ul {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+header, footer {
+    background-color: var(--header-footer-bg-color);
+    text-align: center;
+}
+
+footer {
+    padding: 0.5rem;
+}
+
+header > h1{
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100px;
+}
+
+.special {
+    color: var(--span-color);
+    font-size:smaller;
+    font-family: var(--content-font)
+}
