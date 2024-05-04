@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-footer-bg-color: #112211;
+    --nav-bg-color: #404020;
+    --nav-hover-color: #5e5e3e;
+    --text-color-1: #dedede;
+    --text-color-2: #292929;
+    --span-color: #f1affa;
+
+    --title-font: Roboto;
+    --content-font: Sedan;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: var(--header-footer-bg-color);
+}
+
+h1 {
+    padding: 1rem;
+    color: var(--text-color-1);
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "\2630";
+    font-weight: 1000;
+    font-size: large;
+}
+
+.navigation {
+    /* display: flex; */
+    margin: 0 auto;
+    max-width: 100vh;
+    background-color: var(--nav-bg-color);
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    color: var(--text-color-1);
+    text-align: right;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navigation a:hover, .navigation a:active {
+    color:var(--text-color-1);
+    background-color: var(--nav-hover-color);
+}
+
+.show a {
+    display: block;
+}
+
+#menu.show::before {
+    content:"X";
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+figure {
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--header-footer-bg-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer > p {
+    font-family: var(--title-font);
+    color: var(--text-color-1);
+}
