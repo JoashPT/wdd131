@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joash Tantiangco">
+    <meta name="description" content="Places">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <script src="scripts/places.js" defer></script>
+    <title>Country</title>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <picture id="heroImg">
+            <source media="(min-width:750px)" srcset="images/philippines_orig_large.webp">
+            <img src="images/philippines_orig_small.webp" alt="Philippines">
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>299,764 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>118,857,364</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Manila</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Filipino, English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Philippine Peso</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC+8</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+63</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.ph</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <picture id="weatherSunny">
+                <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Weather Icon" width="75">
+            </picture>
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="temperature">35</span> &#8451;</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="wind">11</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="windChill"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span> | Joash Tantiangco | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@media screen and (min-width:750px) {
+    main {
+        position: relative;
+    }
+
+    #heroImg {
+        position: relative;
+    }
+
+    #heroImg > img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section {
+        position: absolute;
+        background-color: var(--section-bg-color);
+        box-shadow: 1px 1px 1rem 1px gray, -1px -1px 1rem 1px gray;
+    }
+
+    section:first-of-type {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    section:last-of-type {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    h2 {
+        display: block;
+        background-color: var(--heading-bg-color);
+        color: var(--text-color-1);
+        margin: 0 5rem 0 -2rem;
+        text-align: left;
+
+        padding: 0.5rem ;
+    }
+
+    #weatherSunny {
+        display: none;
+    }
+
+    section:last-of-type > h2::after {
+        content: url("/images/weather_clouds_sun_sunny_icon.svg") / "Weather Icon";
+        display: inline-block;
+        position: absolute;
+        width: 40px;
+        margin: -5px 5px;
+    }
+
+    table {
+        margin-top: 1rem;
+    }
+}
