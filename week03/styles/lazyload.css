@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: navy;
+    color: lightgrey;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: lightblue;
+    min-width: 500px;
+    width: 33%;
+    margin: 0 auto;
+}
+
+img {
+    animation: lazy 4.5s;
+}
+
+img:hover {
+    animation-play-state: running;
+}
+
+@keyframes lazy {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+footer {
+    padding-top: 1rem;
+}
+
+footer > p {
+    padding: 0.25rem;
+}
