@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+}
+
+h1, footer {
+    background-color: #117;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+    font-family: Lora, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    min-height: 16rem;
+    min-width: 300px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* .actLabel {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+} */
+
+.padClass {
+    margin: 1rem 0;
+}
+
+.reviewForm {
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    margin: 0 auto;
+}
+
+.reviewForm label {
+    display: block;
+    font-size: 1rem;
+    padding: 0.25rem 0px;
+}
+
+.reviewForm input[type="text"],
+.reviewForm input[type="date"],
+.reviewForm select,
+.reviewForm textarea {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 36px;
+    max-width: 400px;
+    border: solid #333 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.reviewForm textarea {
+    height: 100px;
+}
+
+.reviewForm input[type="radio"],
+.reviewForm input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.reviewForm input[type="checkbox"] {
+    font-size: 1rem;
+}
+
+.reviewForm input[type="radio"] {
+    display: none;
+    position: relative;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.rating > label {
+    color: #fa0;
+    width: 44px;
+    height: 44px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.rating > label:hover {
+    color: #eb2;
+}
+
+.rating > label::before {
+    content: "\2606";
+}
+
+.rating input:checked ~ label::before {
+    content: "\2605";
+}
+
+.reviewForm input[type="submit"] {
+    border: solid  #aaa 2px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ccc;
+    color: #000;
+    width: 100%;
+    min-width: 250px;
+    margin-top: 1rem;
+}
+
+.reviewForm input[type="submit"]:hover {
+    background-color: #333;
+    color: #eee;
+}
+
+.required::before {
+    content: "*";
+    color: #e55;
+    font-size: small;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.optional::before {
+    content: "(Optional)";
+    font-size: small;
+    color: #337;
+    margin: 10px;
+}
+
+#visit {
+    border: none;
+    border-radius: 6px;
+    background-color: #229;
+    color: #fff;
+    padding: .5rem;
+    text-align: center;
+    max-width: 450px;
+    min-width: 400px;
+    margin: 10px auto;
+}
