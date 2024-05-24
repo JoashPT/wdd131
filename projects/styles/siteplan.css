@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sanchez:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #1c110f;
+    --main-color: #ffd99a;
+    --heading-color: #e7b986;
+    --border-color: #75563e;
+
+    --heading-font: Sanchez;
+    --content-font: Lato;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.card {
+    border: solid var(--border-color) 5px;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 0 1rem 1rem 1rem;
+    margin: 0.5rem auto;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    background-color: var(--heading-color);
+    padding: 1.5rem;
+}
+
+.card > figure > img {
+    width: 400px;
+    height: auto;
+}
