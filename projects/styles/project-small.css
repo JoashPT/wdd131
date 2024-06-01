@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sanchez:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-1: #1c110f;
+    --text-color-2: #ebe2df;
+    --hfer-color: #0f0907;
+    --nav-color: #241910;
+    --nav-color-hover: #352a21;
+    --main-color: #ffd99a;
+    --heading-color: #e7b986;
+    --form-color: #f7ddb2;
+    --border-color: #75563e;
+
+    --heading-font: Sanchez;
+    --content-font: Lato;
+}
+
+body {
+    min-width: 400px;
+}
+
+header {
+    background-color: var(--hfer-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--text-color-2);
+    padding: 1.5rem;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.card h3 {
+    font-family: var(--content-font);
+    font-weight: 800;
+    color: var(--text-color-1);
+    margin-top: 0.25rem;
+}
+
+.card p {
+    font-family: var(--content-font);
+    font-weight: 600;
+    color: var(--text-color-1);
+    padding: 0.25rem;
+}
+
+form h2 {
+    font-family: var(--content-font);
+    font-weight: bolder;
+    font-style: oblique;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--heading-color);
+}
+
+form p {
+    font-family: var(--content-font);
+    font-weight: 400;
+    font-style: oblique;
+    margin: 10px;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    color: var(--text-color-2);
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "\2630";
+    font-weight: 1000;
+    font-size: xx-large;
+    padding: 3px;
+}
+
+#menu.show::before {
+    content:"\2630";
+    background-color: var(--nav-color-hover);
+    padding: 3px;
+}
+
+.navigation {
+    margin: 0 auto;
+    max-width: 100vh;
+    background-color: var(--nav-color);
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    color: var(--text-color-2);
+    font-family: var(--content-font);
+    font-style: italic;
+    text-align: right;
+    margin: 0.75rem;
+    padding: 0.75rem;
+}
+
+.navigation a:hover, .navigation a:active {
+    color:var(--text-color-2);
+    background-color: var(--nav-color-hover);
+}
+
+.show a {
+    display: block;
+}
+
+div.backgroundImage {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+div.backgroundImage::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/background_piano.jpg");
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.pianoCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+    padding: 1rem 0;
+}
+
+.card {
+    text-align: center;
+    border: solid var(--border-color) 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--text-color-1);
+    padding: 0.5rem;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.label {
+    font-family: var(--content-font);
+    text-transform: uppercase;
+    font-size: x-small;
+    font-style: italic;
+}
+
+.update {
+    background-color: var(--form-color);
+    border: solid var(--border-color) 5px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+}
+
+.update label {
+    padding: .75rem .75rem 0 .75rem;
+}
+
+.update input[type="text"],
+.update input[type="email"] {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 36px;
+    max-width: 400px;
+    border: solid var(--border-color) 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.update input:required {
+    border-bottom: solid #f00 3px;
+}
+
+.update input:required:valid {
+    border-bottom: solid #0f0 3px;
+}
+
+.update input[type="submit"] {
+    padding: 15px;
+    width: 30%;
+    align-self:last baseline;
+    margin: 1rem;
+    background-color: var(--nav-color);
+    color: var(--text-color-2);
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+}
+
+.update input[type="submit"]:hover {
+    background-color: var(--nav-color-hover);
+}
+
+footer {
+    background-color: var(--hfer-color);
+    color: var(--text-color-2);
+    text-align: center;
+    padding: 1rem;
+    border-top: solid var(--border-color) 5px;
+}

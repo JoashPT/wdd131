@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joash Tantiangco">
+    <meta name="description" content="Webpage for available pianos as project for wdd 131">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <title>Piano Repertoire</title>
+</head>
+<body>
+    <header>
+        <h1>Piano Repertoire</h1>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <a href="#" title="Home" id="menuAll">All</a>
+            <a href="#" title="Grand" id="menuGrand">Grand</a>
+            <a href="#" title="Upright" id="menuUpright">Upright</a>
+            <a href="#" title="Digital" id="menuDigital">Digital</a>
+        </nav>
+    </header>
+    <main>
+    <div></div>
+    <div class="backgroundImage">
+        <section class="pianoCard">
+
+        </section>
+        <form method="get" action="registered.html" class="update">
+            <h2>Get Updated!</h2>
+            <p>Get news about our latest deals and sales!</p>
+            <label>Name<input type="text" id="name" name="fullname" autocomplete="name"></label>
+            <label>Email<input type="email" id="email" name="email" placeholder="somebody@somewhere.com" required></label>
+            <input type="submit" value="Get Updated">
+        </form>
+    </div>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span> | Joash Tantiangco | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

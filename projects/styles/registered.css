@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sanchez:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-1: #1c110f;
+    --text-color-2: #ebe2df;
+    --hfer-color: #0f0907;
+    --nav-color: #241910;
+    --nav-color-hover: #352a21;
+    --main-color: #ffd99a;
+    --heading-color: #e7b986;
+    --form-color: #f7ddb2;
+    --border-color: #75563e;
+
+    --heading-font: Sanchez;
+    --content-font: Lato;
+}
+
+body {
+    min-width: 400px;
+}
+
+header {
+    background-color: var(--hfer-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--text-color-2);
+    padding: 1.5rem;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+div.backgroundImage {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+div.backgroundImage::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/background_piano.jpg");
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.response {
+    background-color: var(--main-color);
+    border: solid var(--border-color) 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.response h2 {
+    font-family: var(--content-font);
+    font-weight: bolder;
+    font-style: oblique;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--heading-color);
+    color: var(--text-color-1);
+}
+
+.response p {
+    font-family: var(--content-font);
+    font-weight: 500;
+    color: var(--text-color-1);
+    padding: 1rem;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+}
+
+.buttonLink {
+    padding: 15px;
+    width: 30%;
+    align-self: flex-end;
+    margin: 1rem;
+    background-color: var(--nav-color);
+    color: var(--text-color-2);
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonLink:hover {
+    background-color: var(--nav-color-hover);
+}
+
+footer {
+    background-color: var(--hfer-color);
+    color: var(--text-color-2);
+    text-align: center;
+    padding: 1rem;
+    border-top: solid var(--border-color) 5px;
+}
+

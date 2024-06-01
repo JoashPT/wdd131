@@ -1,0 +1,25 @@
+@media screen and (min-width: 40rem) {
+    #menu {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .navigation a{
+        display: block;
+        flex: 2 1 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .pianoCard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+        place-items: center;
+    }
+}
